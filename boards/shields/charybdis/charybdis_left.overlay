@@ -1,5 +1,6 @@
 #include "charybdis.dtsi"
 
+#include "split_input_common.dtsi"
 &kscan0 {
 	compatible = "zmk,kscan-gpio-matrix";
 	
@@ -18,4 +19,8 @@
 		, <&pro_micro 4 GPIO_ACTIVE_HIGH>
 		, <&pro_micro 9 GPIO_ACTIVE_HIGH>
 		;
+};
+
+&trackball_listener {
+    status = "okay";
 };
